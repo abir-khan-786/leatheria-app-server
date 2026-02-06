@@ -19,7 +19,10 @@ app.use(
 app.use(express.json())
 
 app.get("/", (req, res) => {
-  res.send("Leatheria API is running")
+  res.send({
+    data: "is rady",
+    msg: "Leatheria API is running",
+  })
 })
 
 // ৩. রাউটস
